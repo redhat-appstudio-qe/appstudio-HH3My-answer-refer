@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: dc-metro-map-pgxl
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/happy-path-e2e-tenant/appstudio/dc-metro-map-pgxl@sha256:4618446b35265f99337b18831619bd40d71827d0303eef0b641a951fcfec09de
+        name: my-nodejs
+        resources: {}
+status: {}
